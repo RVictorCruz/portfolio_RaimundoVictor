@@ -1,0 +1,153 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: rgb(67, 67, 216);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.sobre h3 {
+  font-size: 2em;
+}
+header {
+  background-color: #ffdc7f;
+}
+.nome {
+  margin-right: 50%;
+  position: absolute;
+  font-weight: bold;
+  color: #16325b;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 100px;
+  margin-right: 40%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: #16325b;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.intro-section {
+  background-color: #227b94;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-image {
+  width: 40%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.sobre {
+  flex: 1;
+}
+
+.projects-section {
+  background-color: #16325b;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.projects-section h2 {
+  margin-bottom: 30px;
+}
+
+.project {
+  display: inline-block;
+  width: 30%;
+  margin: 0 10px;
+  vertical-align: top;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .nome {
+    display: none;
+  }
+  body {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .content {
+    padding-bottom: 10%;
+  }
+  .logo {
+    margin-right: 5%;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .intro-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-image {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+  .project {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
